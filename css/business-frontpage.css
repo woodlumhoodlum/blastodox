@@ -1,0 +1,80 @@
+/*!
+ * Start Bootstrap - Business Frontpage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+@font-face {
+    font-family: squealer;
+   src: url('../fonts/squealer.ttf');
+}
+@font-face {
+    font-family: squealem;
+   src: url('../fonts/squealem.ttf');
+}
+.business-header {
+    height: 400px;
+    background: url('../images/main.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 15px #f0e;
+    color: #46Fda9;
+    font-family: squealem;
+
+}
+
+.subline{
+    font-size: 22px;
+    font-family: squealer;
+}
+
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+.navbar-inverse {
+    background-color: #411
+}
+
+#red-news {
+    background-color: #F00;
+    color: white;
+}
+
+#white-news {
+    
+}
+
+#blue-news {
+    background-color: #00F;
+    color: white;
+}
+
+#red-news a, .blue-news a {
+    color: white;
+}
+
+#white-news a{
+    color: black;
+}
+
+.pop a{
+    color: black;
+}
