@@ -23,60 +23,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-        <!-- jQuery -->
-    <script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/handlebars-v3.0.3.js"></script>
-<script type="text/javascript" >
-
-	$(document).ready(function(){
-		
-	var template = $("#politicsTemplate").html();
-    var renderer = Handlebars.compile(template);
-    var result = renderer({ "newsItem" : [{
-     "color" : "red",
-     "description" : "This is an awesome news article",
-     "date" : "4/4/2014",
-     "link" : "www.google.com"
-     },
-     {
-     "color" : "white",
-     "description" : "This is an awesome news article",
-     "date" : "4/4/2014",
-     "link" : "www.google.com"
-     },
-     {
-     "color" : "blue",
-     "description" : "This is an awesome news article",
-     "date" : "4/4/2014",
-     "link" : "www.google.com"
-     }
-     ]
-    });
-    alert("hey");
-    var isRed = function() {
-	  return this.get('color') === 'red';
-	}.property('color');
-  var isWhite = function() {
-	  return this.get('color') === 'white';
-	}.property('color');
-  var isBlue = function() {
-	  return this.get('color') === 'blue';
-	}.property('color');
-
-     $(".politics-toggle").click(function(){
-     	if($(".politics").is(":visible")){
-         $(".politics").hide();
-     	} else {
-     		$(".politics").show();
-     	}
-     });
-
- }); 
-	
-</script>
 </head>
 
 <body>
@@ -98,31 +45,28 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">News</a>
+                        <a href="news.html">News</a>
                     </li>
                     <li>
-                        <a href="#">Dreamsultancy</a>
+                        <a href="blog.html">Dreamsultancy</a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="#">DreamFeed</a>
                     </li>
                     <li>
                         <a href="#">DreamWar</a>
+                    </li> -->
+                    <li>
+                        <a href="reviews.html">Reviews</a>
                     </li>
                     <li>
-                        <a href="#">Reviews</a>
+                        <a href="oddity.html">Oddity</a>
                     </li>
                     <li>
-                        <a href="#">Oddity</a>
+                        <a href="projects.html">Projects</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#">About</a>
+                        <a href="about.html">About</a>
                     </li>
                 </ul>
             </div>
@@ -137,20 +81,20 @@
         <hr>
         
 
-        <h2><center>~Politics~</center></h1>
-        <center><div class="politics-toggle">Sorted by Spin [Toggle On/OFF]</div></center>
+        <h2><div align="center">~Politics~</div></h2>
+        <div align="center" class="politics-toggle">Sorted by Spin [Toggle On/OFF]</div>
         <div class="row politics">
-        	<script type="text/x-handlebars-template" id="itemTemplate">
-        		<div id="politicsTemplate">
-        			<div id="red-news" class="col-sm-4">
-		                <h3><center>Red</center></h3>
-							{{#each newsItem}}
-							    {{#if isRed}}
-									<p><a href="{{link}}">{{description}}</a></p>
-							    {{/if}}
-							{{/each}}
-		            </div>
-				</div>   	
+        	<script type="text/x-handlebars-template" id="politicsTemplate">
+        		
+    			<div id="red-news" class="col-sm-4">
+	                <h3><center>Red</center></h3>
+						{{#each newsItem}}
+						    {{#if isRed}}
+								<p><a href="{{link}}">{{description}}</a></p>
+						    {{/if}}
+						{{/each}}
+	            </div>
+			  	
             
             <div id="white-news" class="col-sm-4">
                 <h3><center>White</center></h3>
@@ -207,9 +151,63 @@
 
     </div>
     <!-- /.container -->
+</div>
+<script type="text/javascript" src="js/handlebars-v3.0.3.js"></script>
+    <!-- jQuery -->
+<script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
+<script type="text/javascript" >
 
+	$(document).ready(function(){
+		
+	var template = $("#politicsTemplate").html();
+    var renderer = Handlebars.compile(template);
+    var result = renderer({ "newsItem" : [{
+     "color" : "red",
+     "description" : "This is an awesome news article",
+     "date" : "4/4/2014",
+     "link" : "www.google.com"
+     },
+     {
+     "color" : "white",
+     "description" : "This is an awesome news article",
+     "date" : "4/4/2014",
+     "link" : "www.google.com"
+     },
+     {
+     "color" : "blue",
+     "description" : "This is an awesome news article",
+     "date" : "4/4/2014",
+     "link" : "www.google.com"
+     }
+     ]
+    });
+    
+    var isRed = function() {
+	  return this.get('color') === 'red';
+	}.getAttribute('color');
+  var isWhite = function() {
+	  return this.get('color') === 'white';
+	}.getAttribute('color');
+  var isBlue = function() {
+	  return this.get('color') === 'blue';
+	}.getAttribute('getAttribute');
 
+     $(".politics-toggle").click(function(){
+     	if($(".politics").is(":visible")){
+         $(".politics").hide();
+     	} else {
+     		$(".politics").show();
+     	}
+     });
+
+ }); 
+	
+</script>
 </body>
+
+
 
 </html>
