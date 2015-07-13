@@ -9,17 +9,18 @@ body {
 }
 
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+@font-face {
+    font-family: squealem;
+   src: url('../fonts/SQUEALEM.TTF');
+}
 @font-face {
     font-family: squealer;
    src: url('../fonts/squealer.ttf');
 }
-@font-face {
-    font-family: squealem;
-   src: url('../fonts/squealem.ttf');
-}
 .business-header {
-    height: 400px;
-    background: url('../images/main.jpg') center center no-repeat scroll;
+    height: 450px;
+    background: url('../images/tiger.svg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -28,10 +29,18 @@ body {
 
 /* Customize the text color and shadow color and to optimize text legibility. */
 
-.tagline {
+/*.tagline {
     text-shadow: 0 0 15px #f0e;
     color: #46Fda9;
     font-family: squealem;
+
+}*/
+
+.tagline {
+    text-shadow: 0 0 15px #357;
+    color: #406453;
+    font-family: squealem;
+    font-size: 55px;
 
 }
 
@@ -40,6 +49,26 @@ body {
     font-family: squealer;
 }
 
+.logo{
+    color: #46Fda9;
+	font-family: squealem;
+}
+.headings{
+	text-shadow: 0 0 15px #357;
+    color: #406453;
+	font-family: squealer;
+}
+.squealer{
+	font-family: squealer;
+}
+
+/*navbar brand heading */
+.navbar-inverse .navbar-brand{
+	color: #ff0;
+	font-family: squealem;
+	font-size: 23px;
+	text-shadow: 0 0 15px #f0e;
+}
 
 .img-center {
     margin: 0 auto;
@@ -67,13 +96,14 @@ footer {
     color: white;
 }
 
-#red-news a, .blue-news a {
+#red-news a, #blue-news a {
     color: white;
 }
 
 #white-news a{
     color: black;
 }
+
 
 .pop a{
     color: black;
