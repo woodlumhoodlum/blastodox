@@ -16,9 +16,9 @@
 
 		<!-- Custom CSS -->
 		<link href="css/business-frontpage.css" rel="stylesheet">
-		<link rel="icon" 
-      type="image/png" 
-      href="images/favicon.png">
+		<link rel="icon"
+		type="image/png"
+		href="images/favicon.png">
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -29,7 +29,6 @@
 	</head>
 
 	<body>
-
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -43,30 +42,30 @@
 					</button>
 					<a class="navbar-brand" href="index.html">BLASTODOX</a>
 				</div>
-			<!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="news.html">News</a>
-                    </li>
-                    <li>
-                        <a href="http://blog.blastodox.com">Blog</a>
-                    </li>
-                    <li>
-                        <a href="reviews.html">Reviews</a>
-                    </li>
-                    <li>
-                        <a href="oddity.html">Oddity</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Projects</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="news.html">News</a>
+						</li>
+						<li>
+							<a href="http://blog.blastodox.com">Blog</a>
+						</li>
+						<li>
+							<a href="reviews.html">Reviews</a>
+						</li>
+						<li>
+							<a href="oddity.html">Oddity</a>
+						</li>
+						<li>
+							<a href="projects.html">Projects</a>
+						</li>
+						<li>
+							<a href="about.html">About</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
 			</div>
 			<!-- /.container -->
 		</nav>
@@ -89,9 +88,9 @@
 						<div id="red-news">
 						<h3><center>Red</center></h3>
 						{{#each newsItem}}
-							
+
 						<p><a href="{{link}}">{{description}}</a></p>
-							
+
 						{{/each}}
 						</div>
 
@@ -127,47 +126,100 @@
 				</div>
 				<!-- /.row -->
 			</div>
-			</div>
+		</div>
+		<div id="popOverlord" class="container">
 			<h2>
 			<div align="center">
 				Pop Culture
 			</div></h2>
-			<div class="row pop">
+			<div class="row pop" id="containerPop">
 				<div class="col-sm-4">
 					<h3>
 					<center>
 						Tech
 					</center></h3>
+					<div id="containerTech">
+						<script type="text/x-handlebars-template" id="popTemplateTech">
 
+							<div id="tech-news">
+
+							{{#each newsItem}}
+
+							<p><a href="{{link}}">{{description}}</a></p>
+
+							{{/each}}
+							</div>
+
+						</script>
+					</div>
 				</div>
-				<div class="col-sm-4">
+
+				<div class="row pop col-sm-4">
 					<h3>
 					<center>
-						Music
+						Media
 					</center></h3>
-					<p>
-						<a href="http://cnsnews.com/news/article/ali-meyer/record-93626000-americans-not-labor-force-participation-rate-declines-626">93,626,000 Not in Labor Force...</a>
-					</p>
-					<p>
-						<a href="http://cnsnews.com/news/article/ali-meyer/record-93626000-americans-not-labor-force-participation-rate-declines-626">93,626,000 Not in Labor Force...</a>
-					</p>
+					<div id="containerMedia">
+						<script type="text/x-handlebars-template" id="popTemplateMedia">
+
+							<div id="media-news">
+
+							{{#each newsItem}}
+
+							<p><a href="{{link}}">{{description}}</a></p>
+
+							{{/each}}
+							</div>
+
+						</script>
+					</div>
 				</div>
-				<div class="col-sm-4 blue-news">
+
+				<div class="row pop col-sm-4">
 					<h3>
 					<center>
-						Games
+						Random
 					</center></h3>
+					<div id="containerRandom">
+						<script type="text/x-handlebars-template" id="popTemplateRandom">
+
+							<div id="random-news">
+
+							{{#each newsItem}}
+
+							<p><a href="{{link}}">{{description}}</a></p>
+
+							{{/each}}
+							</div>
+
+						</script>
+					</div>
+				</div>
+
+			</div>
+			<div id="financeOverlord" align="center">
+				<h2 align="center">
+					Finance</h2>
+				<div id="containerFinance">
+					<script type="text/x-handlebars-template" id="financeTemplate">
+
+						<div id="finance-news">
+
+						{{#each newsItem}}
+
+						<p><a href="{{link}}">{{description}}</a></p>
+
+						{{/each}}
+						</div>
+
+					</script>
 				</div>
 			</div>
 
-			<h2>
-			<center>
-				Finance
-			</center></h1><h2>
-			<center>
-				Editorials
-			</center></h2>
-			
+			<div id="editorialsOverlord" align="center">
+				<h2 align="center">Editorials</h2>
+			</div>
+
 			<hr>
 			<!-- Footer -->
 			<footer>
@@ -180,8 +232,9 @@
 				</div>
 				<!-- /.row -->
 			</footer>
-		
-		<!-- /.container -->
+
+			<!-- /.container -->
+		</div>
 		</div>
 		<script type="text/javascript" src="js/handlebars-v3.0.3.js"></script>
 		<!-- jQuery -->
@@ -189,7 +242,7 @@
 		<!-- Bootstrap Core JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/news.js"></script>
-		
+
 	</body>
 
 </html>

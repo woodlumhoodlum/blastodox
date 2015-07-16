@@ -53,7 +53,7 @@ body {
     color: #46Fda9;
 	font-family: squealem;
 }
-.headings{
+h1, h2, .headings{
 	text-shadow: 0 0 15px #357;
     color: #406453;
 	font-family: squealer;
@@ -83,17 +83,26 @@ footer {
 }
 
 #red-news {
-    background-color: #F00;
+    background-color: #900;
     color: white;
+    margin-left: 10px;
+    text-indent:10px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #white-news {
-    
+    margin-left: 10px;
+    text-align: center;
 }
 
 #blue-news {
-    background-color: #00F;
+    background-color: #009;
     color: white;
+    margin-left: 10px;
+    text-indent:10px;
+    text-align: center;
+    border-radius: 10px;
 }
 
 #red-news a, #blue-news a {
