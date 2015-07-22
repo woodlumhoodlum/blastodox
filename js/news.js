@@ -32,7 +32,7 @@ $(document).ready(function() {
 			"color" : "red",
 			"description" : "U.S. leaders surprised by Iran still wishing them death after Nuke deal. smh",
 			"date" : "",
-			"link" : "http://www.realguns.com/articles/726.htm"
+			"link" : "https://ca.news.yahoo.com/u-disturbed-iranian-leaders-criticism-deal-121454843--finance.html"
 		},{
 			"color" : "red",
 			"description" : "Review of Ruger Precision Rifle. 1600yds for a lil over a G.",
