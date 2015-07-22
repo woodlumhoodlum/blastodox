@@ -30,6 +30,16 @@ $(document).ready(function() {
 	var result = renderer({
 		"newsItem" : [{
 			"color" : "red",
+			"description" : "U.S. leaders surprised by Iran still wishing them death after Nuke deal. smh",
+			"date" : "",
+			"link" : "http://www.realguns.com/articles/726.htm"
+		},{
+			"color" : "red",
+			"description" : "Review of Ruger Precision Rifle. 1600yds for a lil over a G.",
+			"date" : "",
+			"link" : "http://www.realguns.com/articles/726.htm"
+		},{
+			"color" : "red",
 			"description" : "Four American hostages in Iran left out to dry.",
 			"date" : "",
 			"link" : "http://www.thedailybeast.com/cheats/2015/07/15/obama-rips-jab-on-u-s-hostages-in-iran.html"
@@ -56,17 +66,22 @@ $(document).ready(function() {
 	var renderer = Handlebars.compile(template);
 	var result = renderer({
 		"newsItem" : [{
-			"color" : "blue",
+			"color" : "white",
+			"description" : "USS Zumwalt",
+			"date" : "",
+			"link" : "http://www.popsci.com/future-war-new-ships-will-determine-control-contested-waters"
+		},{
+			"color" : "white",
 			"description" : "The Cascadia plate is an orca, and Oregon's coast is a splash zone.",
 			"date" : "",
 			"link" : "http://www.newyorker.com/magazine/2015/07/20/the-really-big-one"
 		}, {
-			"color" : "blue",
+			"color" : "white",
 			"description" : "These are the cool DARPA projects you're tax dollars are funding! :)",
 			"date" : "",
 			"link" : "http://www.darpa.mil/our-research?ppl=viewall&tFilter=&oFilter=3&sort=undefined"
 		}, {
-			"color" : "blue",
+			"color" : "white",
 			"description" : "Latest Election Polls",
 			"date" : "",
 			"link" : "http://www.realclearpolitics.com/epolls/latest_polls/"
@@ -78,6 +93,11 @@ $(document).ready(function() {
 	var renderer = Handlebars.compile(template);
 	var result = renderer({
 		"newsItem" : [{
+			"color" : "blue",
+			"description" : "Cincinnati: Another unarmed victim of police shooting",
+			"date" : "",
+			"link" : "http://www.cnn.com/2015/07/21/us/cincinnati-police-shooting/index.html"
+		},{
 			"color" : "blue",
 			"description" : "Global cooling? Not really.",
 			"date" : "",
@@ -111,9 +131,29 @@ $(document).ready(function() {
 	var result = renderer({
 		"newsItem" : [{
 			"color" : "",
-			"description" : "StrongLoop can get you RESTful right quick",
+			"description" : "Great Data Science Tutorial, also teaches python free",
 			"date" : "",
-			"link" : "https://www.youtube.com/watch?v=wW_jSwVcXuM"
+			"link" : "http://dataquest.io"
+		},{
+			"color" : "",
+			"description" : "Tesla hits top 13 fastest Production cars when Ludicrous mode hits",
+			"date" : "",
+			"link" : "https://en.wikipedia.org/wiki/List_of_fastest_production_cars_by_acceleration"
+		},{
+			"color" : "",
+			"description" : "HACKERS CAN WIRELESSLY SHUTDOWN CARS WITH UCONNECT!",
+			"date" : "",
+			"link" : "http://www.wired.com/2015/07/hackers-remotely-kill-jeep-highway/"
+		},{
+			"color" : "",
+			"description" : "Video games: implementing quick soft ray traced shadows",
+			"date" : "",
+			"link" : "http://blog.imgtec.com/multimedia/implementing-fast-ray-traced-soft-shadows-in-a-game-engine"
+		},{
+			"color" : "",
+			"description" : "Fun Node.js/mongodb/socketio app tutorial",
+			"date" : "",
+			"link" : "http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/"
 		}, {
 			"color" : "",
 			"description" : "Pluto pics",
@@ -137,6 +177,11 @@ $(document).ready(function() {
 	var renderer = Handlebars.compile(template);
 	var result = renderer({
 		"newsItem" : [{
+			"color" : "",
+			"description" : "Ghostface Killah hits back heavy at Action Bronson over comments",
+			"date" : "",
+			"link" : "https://www.youtube.com/watch?v=z93IaKPY_Wc"
+		},{
 			"color" : "",
 			"description" : "Game Reeview: Overture",
 			"date" : "",
@@ -164,6 +209,21 @@ $(document).ready(function() {
 	var renderer = Handlebars.compile(template);
 	var result = renderer({
 		"newsItem" : [{
+			"color" : "",
+			"description" : "Those pet tick cards are obviously fake",
+			"date" : "",
+			"link" : "http://www.tetherdcow.com/another-science-experiment/"
+		},{
+			"color" : "",
+			"description" : "Massless particle found",
+			"date" : "",
+			"link" : "http://www.princeton.edu/main/news/archive/S43/64/59M11/index.xml"
+		},{
+			"color" : "blue",
+			"description" : "Breakin' up hearts your brain :(",
+			"date" : "",
+			"link" : "http://throb.gizmodo.com/heres-what-breaking-up-does-to-your-brain-1717776450"
+		},{
 			"color" : "blue",
 			"description" : "Become a doggy chew toy!",
 			"date" : "",
