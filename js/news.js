@@ -30,6 +30,16 @@ $(document).ready(function() {
 	var result = renderer({
 		"newsItem" : [{
 			"color" : "red",
+			"description" : "Scott Walker on Abortion",
+			"date" : "",
+			"link" : "http://www.ijreview.com/2015/07/372343-scott-walker-signs-bill-banning-abortion-wisconsin-20-weeks-sign-nation/?utm_source=facebook&utm_medium=Partners&utm_term=PRM7&utm_campaign="
+		},{
+			"color" : "red",
+			"description" : "Obama still wants our guns. Good thing I own stock. Literally, thanks Obama.",
+			"date" : "",
+			"link" : "http://www.washingtontimes.com/news/2015/jul/27/obama-pushing-for-largest-gun-grab-in-american-his/?cache"
+		},{
+			"color" : "red",
 			"description" : "U.S. leaders surprised by Iran still wishing them death after Nuke deal. smh",
 			"date" : "",
 			"link" : "https://ca.news.yahoo.com/u-disturbed-iranian-leaders-criticism-deal-121454843--finance.html"
@@ -67,6 +77,11 @@ $(document).ready(function() {
 	var result = renderer({
 		"newsItem" : [{
 			"color" : "white",
+			"description" : "Harvesting Organs pre-death",
+			"date" : "",
+			"link" : "http://aeon.co/magazine/philosophy/we-should-harvest-organs-from-patients-before-death/"
+		},{
+			"color" : "white",
 			"description" : "USS Zumwalt",
 			"date" : "",
 			"link" : "http://www.popsci.com/future-war-new-ships-will-determine-control-contested-waters"
@@ -93,6 +108,16 @@ $(document).ready(function() {
 	var renderer = Handlebars.compile(template);
 	var result = renderer({
 		"newsItem" : [{
+			"color" : "blue",
+			"description" : "Jerry Brown: Extinction",
+			"date" : "",
+			"link" : "http://www.sacbee.com/news/politics-government/capitol-alert/article27998554.html"
+		},{
+			"color" : "blue",
+			"description" : "Exploring desalinization in Cali",
+			"date" : "",
+			"link" : "http://www.newyorker.com/tech/elements/can-desalination-counter-the-drought"
+		},{
 			"color" : "blue",
 			"description" : "Cincinnati: Another unarmed victim of police shooting",
 			"date" : "",
@@ -130,6 +155,11 @@ $(document).ready(function() {
 	var renderer = Handlebars.compile(template);
 	var result = renderer({
 		"newsItem" : [{
+			"color" : "",
+			"description" : "Powerful women in tech from the get go. Pretty inspiring.",
+			"date" : "",
+			"link" : "http://www.fastcompany.com/3047428/how-two-bored-1970s-housewives-helped-create-the-pc-industry"
+		},{
 			"color" : "",
 			"description" : "Great Data Science Tutorial, also teaches python free",
 			"date" : "",
@@ -210,6 +240,21 @@ $(document).ready(function() {
 	var result = renderer({
 		"newsItem" : [{
 			"color" : "",
+			"description" : "OG Tech Casino Hustler",
+			"date" : "",
+			"link" : "http://gizmodo.com/casinos-and-con-men-the-hustler-origins-of-wearable-co-1718085809"
+		},{
+			"color" : "",
+			"description" : "Super Humans!",
+			"date" : "",
+			"link" : "http://www.bloomberg.com/news/articles/2015-07-22/these-superhumans-are-real-and-their-dna-could-be-worth-billions"
+		},{
+			"color" : "",
+			"description" : "Intriguing billion dollar bank robbery",
+			"date" : "",
+			"link" : "http://www.bbc.com/news/magazine-33166383"
+		},{
+			"color" : "",
 			"description" : "Those pet tick cards are obviously fake",
 			"date" : "",
 			"link" : "http://www.tetherdcow.com/another-science-experiment/"
@@ -256,6 +301,16 @@ $(document).ready(function() {
 		var renderer = Handlebars.compile(template);
 		var result = renderer({
 			"newsItem" : [{
+				"color" : "",
+				"description" : "Dividend growth investors need to stay vigilent",
+				"date" : "",
+				"link" : "http://seekingalpha.com/article/3360225-retired-dividend-growth-investors-are-lulled-into-a-false-sense-of-security"
+			},{
+				"color" : "",
+				"description" : "mREIT with 29.4% yield",
+				"date" : "",
+				"link" : "http://seekingalpha.com/article/3363915-whats-wrong-with-the-mreits-morl-now-yields-29_4-percent"
+			},{
 				"color" : "",
 				"description" : "Greece passes Austerity Bill",
 				"date" : "",
